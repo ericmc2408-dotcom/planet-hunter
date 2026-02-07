@@ -1,0 +1,145 @@
+
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║               EXOPLANET DISCOVERY REPORT                            ║
+║                   Planet Hunter v1.0                                ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+EXECUTIVE SUMMARY
+═══════════════════════════════════════════════════════════════════════
+
+Discovery Date: February 07, 2026
+Total Candidates: 29
+Data Source: TESS (Transiting Exoplanet Survey Satellite)
+Method: Automated Box Least Squares (BLS) Transit Search
+Analysis Period: 24 hours
+Cost: $0
+
+CANDIDATE BREAKDOWN
+═══════════════════════════════════════════════════════════════════════
+
+By Orbital Period:
+- Ultra-short (< 1 day): 3
+- Short (1-5 days): 2
+- Medium (5-10 days): 1
+- Long (10-20 days): 23
+
+By Estimated Size (transit depth):
+- Large (>3%): 7 - Jupiter-class
+- Medium (1-3%): 19 - Neptune-class  
+- Small (<1%): 3 - Earth-class
+
+TOP 10 CANDIDATES
+═══════════════════════════════════════════════════════════════════════
+
+
+1. TIC 35148303
+   Period: 0.94 days
+   Transit Depth: 4.09%
+   Detection Score: 3822.0
+   ExoFOP: https://exofop.ipac.caltech.edu/tess/target.php?id=35148303
+
+9. TIC 382177710
+   Period: 16.20 days
+   Transit Depth: 1.25%
+   Detection Score: 2652.2
+   ExoFOP: https://exofop.ipac.caltech.edu/tess/target.php?id=382177710
+
+19. TIC 444685421
+   Period: 12.92 days
+   Transit Depth: 0.84%
+   Detection Score: 1741.1
+   ExoFOP: https://exofop.ipac.caltech.edu/tess/target.php?id=444685421
+
+14. TIC 373508884
+   Period: 13.02 days
+   Transit Depth: 2.06%
+   Detection Score: 1087.2
+   ExoFOP: https://exofop.ipac.caltech.edu/tess/target.php?id=373508884
+
+20. TIC 465392463
+   Period: 14.54 days
+   Transit Depth: 4.68%
+   Detection Score: 625.7
+   ExoFOP: https://exofop.ipac.caltech.edu/tess/target.php?id=465392463
+
+10. TIC 316288294
+   Period: 15.24 days
+   Transit Depth: 3.48%
+   Detection Score: 586.3
+   ExoFOP: https://exofop.ipac.caltech.edu/tess/target.php?id=316288294
+
+24. TIC 36746919
+   Period: 15.32 days
+   Transit Depth: 3.70%
+   Detection Score: 437.3
+   ExoFOP: https://exofop.ipac.caltech.edu/tess/target.php?id=36746919
+
+22. TIC 448437679
+   Period: 13.84 days
+   Transit Depth: 1.55%
+   Detection Score: 414.7
+   ExoFOP: https://exofop.ipac.caltech.edu/tess/target.php?id=448437679
+
+25. TIC 19661061
+   Period: 13.54 days
+   Transit Depth: 3.39%
+   Detection Score: 401.8
+   ExoFOP: https://exofop.ipac.caltech.edu/tess/target.php?id=19661061
+
+21. TIC 454551018
+   Period: 2.08 days
+   Transit Depth: 1.09%
+   Detection Score: 318.0
+   ExoFOP: https://exofop.ipac.caltech.edu/tess/target.php?id=454551018
+
+
+METHODOLOGY
+═══════════════════════════════════════════════════════════════════════
+
+1. Data Acquisition
+   - Source: TESS public archive (MAST)
+   - Target selection: Systematic sampling across TIC catalog
+   - Light curves downloaded via Lightkurve API
+
+2. Transit Detection
+   - Algorithm: Box Least Squares periodogram
+   - Period range: 0.5 - 20 days
+   - Minimum transits required: 2
+
+3. Candidate Validation
+   - Outlier removal
+   - Light curve flattening
+   - Statistical significance filtering
+   - Binary star rejection (depth > 10%)
+
+4. Classification
+   - Score = Power × Transit_Depth × 100
+   - Threshold: Score > 50 and < 10,000
+   - Manual validation: Light curve inspection
+
+NEXT STEPS
+═══════════════════════════════════════════════════════════════════════
+
+1. Community vetting via ExoFOP
+2. Multi-sector validation (additional TESS observations)
+3. Ground-based photometric follow-up
+4. Spectroscopic characterization (mass determination)
+5. Publication in peer-reviewed journal
+
+ACKNOWLEDGMENTS
+═══════════════════════════════════════════════════════════════════════
+
+- NASA/MIT TESS Team for public data
+- Lightkurve development team
+- ExoFOP TESS community
+
+═══════════════════════════════════════════════════════════════════════
+
+Full candidate list available in: MEGA_DISCOVERY.csv
+Analysis code: https://github.com/[your-username]/planet-hunter
+
+Contact: [your email if you want]
+
+═══════════════════════════════════════════════════════════════════════
